@@ -1,0 +1,36 @@
+D2 PlayPause A LED
+D3 Cue A LED
+D4 FX1 LED
+D5 PlayPauseB LED
+D6 Cue B LED
+D7 FX2 LED
+
+D8  multiplexer 0
+D9  multiplexer 1
+D10 multiplexer 2
+D11 multiplexer 3
+
+D12 input from digital multiplexer
+
+A0 input from analogue multiplexer
+
+Digital inputs (multiplexer order):
+PlayPause A Note B3  (59)
+Cue A       Note Eb3 (51)
+FX1         Note F6  (89)
+PlayPause B Note F#4 (66)
+Cue B       Note C4  (60)
+FX2         Note A6  (93)
+
+Analogue inputs (multiplexer order):
+EQ H A    0x10
+EQ M A    0x12
+EQ B A    0x14
+Channel A 0x16
+EQ H B    0x11
+EQ M B    0x13
+EQ B B    0x15
+Channel B 0x07
+
+Crossfade 0x0A - 0 is right, 127 is left
+Master    0x17
